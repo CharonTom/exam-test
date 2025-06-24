@@ -13,18 +13,18 @@ export class Book implements IBook {
     this.id = id;
     this.title = title;
     this.author = author;
-    this.status = 'available';
+    this.status = "available";
   }
 
   isBorrowed(): boolean {
-    return this.status === 'borrowed';
+    return this.status === "borrowed";
   }
 
   isAvailable(): boolean {
-    return this.status === 'available';
+    return this.status === "available";
   }
 
   isInMaintenance(): boolean {
-    return this.status === 'maintenance';
+    return this.status === "maintenance";
   }
 }
